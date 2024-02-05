@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kinder Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <h1 class="title">
+            Kinder Portfolio
+        </h1>
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <div class="columns">
+                        <div class="column">
+                            <div class="block">
+                                <span class="tag is-info is-large">05. Februar 2024: € 3.606,05</span>
+                            </div>
+                            <div class="block">
+                                Daten zum ersten Mal am 22.10.2022 notiert. <br>
+                                Per Sparplan monatlich 100,- in iShares Core MSCI World<br>
+                                Vom Sparschwein in iShares Core S&P 500.
+                                <!-- <strong>Bulma</strong> is {{foo}}! -->
+                            </div>
+                        </div>
+                        <div id="piechart" class="column">
+                        </div>
+                        <script type="application/javascript">
+                            var options = {
+                                series: [2524.65, 1001.39],
+                                chart: {
+                                    width: 480,
+                                    type: 'pie',
+                                },
+                                labels: ['iShares Core MSCI World', 'iShares Core S&P 500'],
+                                responsive: [{
+                                    breakpoint: 480,
+                                    options: {
+                                        chart: {
+                                            width: 200
+                                        },
+                                        legend: {
+                                            position: 'bottom'
+                                        }
+                                    }
+                                }],
+                                yaxis: {
+                                    labels: {
+                                        formatter: function (value) {
+                                            return value.toLocaleString();
+                                        }
+                                    },
+                                },
+                                dataLabels: {
+                                    style: {
+                                        fontSize: '12px',
+                                        fontWeight: 'bold',
+                                    },
+                                    background: {
+                                        enabled: true,
+                                        foreColor: '#000',
+                                        borderRadius: 2,
+                                        padding: 4,
+                                        opacity: 0.9,
+                                        borderWidth: 1,
+                                        borderColor: '#fff'
+                                    }
+                                }
+                            };
+
+                            var chart = new ApexCharts(document.querySelector("#piechart"), options);
+                            chart.render();
+                        </script>
+                    </div>
+                    <p>
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <div id="chart">
+                    </div>
+                    <script type="application/javascript">
+                        var options = {
+                            series: [{
+                                    name: 'Insgesamt',
+                                    data: [853.49, 1153.14, 1291.01, 1370.44, 1545.40, 2612.73, 2714.58, 2683.25, 2805.42, 3141.55, 3289.65, 3606.04]
+                                },
+                                {
+                                    name: 'iShares Core MSCI World',
+                                    data: [421.39, 511.53, 598.88, 658.74, 818.50, 1713.08, 1804.28, 1825.52, 1943.65, 2150.62, 2283.54, 2524.65]
+                                },
+                                {
+                                    name: 'iShares Core S&P 500',
+                                    data: [182.65, 407.93, 445.77, 466.03, 487.22, 626.26, 628.91, 600.51, 603.89, 990.93, 1006.11, 1081.39]
+                                },
+                                {
+                                    name: 'Deka MSCI World',
+                                    data: [133.35, 125.92, 130.54, 129.81, 125.88, 141.35, 141.31, 134.80, 135.48, 0, 0, 0]
+                                },
+                                {
+                                    name: 'Xtrackers S&P 500',
+                                    data: [116.10, 107.12, 115.82, 115.86, 113.80, 132.04, 130.08, 122.42, 122.48, 0, 0, 0]
+                                }],
+                            chart: {
+                                type: 'area',
+                                height: 500,
+                                zoom: {
+                                    enabled: false
+                                }
+                            },
+                            dataLabels: {
+                                enabled: false
+                            },
+                            stroke: {
+                                curve: 'straight'
+                            },
+
+                            title: {
+                                text: '',
+                                align: 'left'
+                            },
+                            subtitle: {
+                                text: '',
+                                align: 'left'
+                            },
+                            labels: ["09/22","10/22","11/22","12/22","01/23","08/23","09/23","10/23","11/23","12/23","01/24","02/24"],
+                            xaxis: {
+                                categories: ["09/22","10/22","11/22","12/22","01/23","08/23","09/23","10/23","11/23","12/23","01/24","02/24"],
+                            },  
+                            yaxis: {
+                                opposite: true,
+                                labels: {
+                                    formatter: function (value) {
+                                        return value.toLocaleString();
+                                    }
+                                }
+                            },
+                            legend: {
+                                horizontalAlign: 'left'
+                            },
+                            toolbar: {
+                                show: false
+                            },
+                            fill: {
+                                type: 'image',
+                                image: {
+                                    //src: ['img/hase.jpeg', 'img/maus1.jpeg', 'img/dino.webp', 'img/maus2.jpeg', 'img/dino3.png'],
+                                    src: ['img/maus1.jpeg'],
+                                    width: 100,  // optional
+                                    height: 100  //optional
+                                }
+                            }
+                        };
+
+                        var chart = new ApexCharts(document.querySelector("#chart"), options);
+                        chart.render();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+    </div>
+</footer>
+</body>
+</html>
