@@ -1,0 +1,8 @@
+.bg-img-full {
+    background-image: url('../img/maus2.jpeg') ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+}
