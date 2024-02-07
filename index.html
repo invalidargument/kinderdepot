@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kinder Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/custom.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 <body>
-<section class="section">
+<section class="section bg-img-full">
     <div class="container">
         <h1 class="title">
-            Kinder Portfolio
+            Kinder Depot
         </h1>
-        <div class="card">
+        <div class="card bg-img-full">
             <div class="card-content">
                 <div class="content">
                     <div class="columns">
-                        <div class="column">
+                        <div class="column is-two-thirds">
                             <div class="block">
-                                <span class="tag is-info is-large">05. Februar 2024: € 3.606,05</span>
+                                <span class="tag is-info is-large">€ 3.606,05 (05. Februar 2024)</span>
                             </div>
                             <div class="block">
                                 Daten zum ersten Mal am 22.10.2022 notiert. <br>
@@ -29,18 +30,20 @@
                                 <!-- <strong>Bulma</strong> is {{foo}}! -->
                             </div>
                         </div>
+                        <!--
                         <div id="piechart" class="column">
                         </div>
+                        //-->
                         <script type="application/javascript">
                             var options = {
                                 series: [2524.65, 1001.39],
                                 chart: {
-                                    width: 480,
+                                    width: 500,
                                     type: 'pie',
                                 },
                                 labels: ['iShares Core MSCI World', 'iShares Core S&P 500'],
                                 responsive: [{
-                                    breakpoint: 480,
+                                    breakpoint: 500,
                                     options: {
                                         chart: {
                                             width: 200
@@ -78,15 +81,11 @@
                             chart.render();
                         </script>
                     </div>
-                    <p>
-
-
-                    </p>
                 </div>
             </div>
         </div>
         <br>
-        <div class="card">
+        <div class="card bg-img-full">
             <div class="card-content">
                 <div class="content">
                     <div id="chart">
@@ -115,7 +114,7 @@
                                 }],
                             chart: {
                                 type: 'area',
-                                height: 500,
+                                height: 600,
                                 zoom: {
                                     enabled: false
                                 }
