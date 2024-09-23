@@ -12,125 +12,12 @@
 <body>
 <section class="section">
     <div class="container">
-        <h1 class="title">
-            Kinder Depot
-        </h1>
         <section class="hero is-info">
             <div class="hero-body">
                 <p class="title">Kinderdepot</p>
-                <p class="subtitle">Kursentwicklung im Rückblick</p>
+                <p class="subtitle">€ 6.914,73 am 04. September 2024</p>
             </div>
         </section>
-        <div class="card">
-            <div class="card-content">
-                <div class="content">
-                    <div class="columns">
-                        <div class="column is-one-third">
-                            <div class="block">
-                                <span class="tag is-info is-large">€ 6.914,73 (04. September 2024)</span>
-                            </div>
-                            <div class="message">
-                                <strong>Start: April 2022</strong><br>
-                                Sparplan: 100,-/Monat iShares Core MSCI World<br>
-                                Sparschwein: iShares Core S&P 500.
-                                <!-- <strong>Bulma</strong> is {{foo}}! -->
-                            </div>
-
-                            <table class="table is-hoverable is-narrow">
-                                <thead>
-                                <tr>
-                                    <th><abbr title="Position">Pos.</abbr></th>
-                                    <th>Link</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th>iShares Core MSCI World</th>
-                                    <td>
-                                        <a href="https://wertpapiere.ing.de/Investieren/Fonds/IE00B4L5Y983" title="iShares Core MSCI World" target="_blank">
-                                        <span class="icon">
-                                          <i class="fas fa-link"></i>
-                                        </span>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>iShares Core S&P 500</th>
-                                    <td>
-                                        <a href="https://wertpapiere.ing.de/Investieren/Fonds/IE00B5BMR087" title="iShares Core S&P 500" target="_blank">
-                                        <span class="icon">
-                                          <i class="fas fa-link"></i>
-                                        </span>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>iShares NASDAQ 100</th>
-                                    <td>
-                                        <a href="https://wertpapiere.ing.de/Investieren/Fonds/IE00B53SZB19" title="iShares NSADAQ 100" target="_blank">
-                                        <span class="icon">
-                                          <i class="fas fa-link"></i>
-                                        </span>
-                                        </a>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--
-                        <div id="piechart" class="column">
-                        </div>
-                        //-->
-                        <script type="application/javascript">
-                            var options = {
-                                series: [2524.65, 1001.39],
-                                chart: {
-                                    width: 500,
-                                    type: 'pie',
-                                },
-                                labels: ['iShares Core MSCI World', 'iShares Core S&P 500'],
-                                responsive: [{
-                                    breakpoint: 500,
-                                    options: {
-                                        chart: {
-                                            width: 200
-                                        },
-                                        legend: {
-                                            position: 'bottom'
-                                        }
-                                    }
-                                }],
-                                yaxis: {
-                                    labels: {
-                                        formatter: function (value) {
-                                            return value.toLocaleString();
-                                        }
-                                    },
-                                },
-                                dataLabels: {
-                                    style: {
-                                        fontSize: '12px',
-                                        fontWeight: 'bold',
-                                    },
-                                    background: {
-                                        enabled: true,
-                                        foreColor: '#000',
-                                        borderRadius: 2,
-                                        padding: 4,
-                                        opacity: 0.9,
-                                        borderWidth: 1,
-                                        borderColor: '#fff'
-                                    }
-                                }
-                            };
-
-                            var chart = new ApexCharts(document.querySelector("#piechart"), options);
-                            chart.render();
-                        </script>
-                    </div>
-                </div>
-            </div>
-        </div>
         <br>
         <div class="card">
             <div class="card-content">
@@ -221,6 +108,126 @@
                         var chart = new ApexCharts(document.querySelector("#chart"), options);
                         chart.render();
                     </script>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <article class="message is-info">
+                                <div class="message-header">
+                                    <p>Start: April 2022</p>
+                                </div>
+                                <div class="message-body">
+                                    Sparplan: 100,-/Monat iShares Core MSCI World<br>
+                                    Sparschwein: iShares Core S&P 500.<br><br>
+                                    Daten werden am Anfang des Monats erhoben, nachdem der Sparplan ausgeführt ist.
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column is-half">
+                            <article class="message is-info">
+                                <div class="message-header">
+                                    <p>Positionen</p>
+                                </div>
+                                <div class="message-body">
+                                    <table class="table is-hoverable is-narrow">
+                                        <thead>
+                                        <tr>
+                                            <th><abbr title="Position">Pos.</abbr></th>
+                                            <th>Link</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>iShares Core MSCI World</th>
+                                            <td>
+                                                <a href="https://wertpapiere.ing.de/Investieren/Fonds/IE00B4L5Y983" title="iShares Core MSCI World" target="_blank">
+                                                    <span class="icon">
+                                                      <i class="fas fa-link"></i>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>iShares Core S&P 500</th>
+                                            <td>
+                                                <a href="https://wertpapiere.ing.de/Investieren/Fonds/IE00B5BMR087" title="iShares Core S&P 500" target="_blank">
+                                                    <span class="icon">
+                                                      <i class="fas fa-link"></i>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>iShares NASDAQ 100</th>
+                                            <td>
+                                                <a href="https://wertpapiere.ing.de/Investieren/Fonds/IE00B53SZB19" title="iShares NSADAQ 100" target="_blank">
+                                                    <span class="icon">
+                                                      <i class="fas fa-link"></i>
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </article>
+                        </div>
+                        <!--
+                        <div id="piechart" class="column">
+                        </div>
+                        //-->
+                        <script type="application/javascript">
+                            var options = {
+                                series: [2524.65, 1001.39],
+                                chart: {
+                                    width: 500,
+                                    type: 'pie',
+                                },
+                                labels: ['iShares Core MSCI World', 'iShares Core S&P 500'],
+                                responsive: [{
+                                    breakpoint: 500,
+                                    options: {
+                                        chart: {
+                                            width: 200
+                                        },
+                                        legend: {
+                                            position: 'bottom'
+                                        }
+                                    }
+                                }],
+                                yaxis: {
+                                    labels: {
+                                        formatter: function (value) {
+                                            return value.toLocaleString();
+                                        }
+                                    },
+                                },
+                                dataLabels: {
+                                    style: {
+                                        fontSize: '12px',
+                                        fontWeight: 'bold',
+                                    },
+                                    background: {
+                                        enabled: true,
+                                        foreColor: '#000',
+                                        borderRadius: 2,
+                                        padding: 4,
+                                        opacity: 0.9,
+                                        borderWidth: 1,
+                                        borderColor: '#fff'
+                                    }
+                                }
+                            };
+
+                            var chart = new ApexCharts(document.querySelector("#piechart"), options);
+                            chart.render();
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
